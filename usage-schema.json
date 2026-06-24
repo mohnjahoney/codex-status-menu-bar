@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "fiveHourRemaining": { "type": "integer" },
+    "fiveHourReset": { "type": "string" },
+    "weeklyRemaining": { "type": "integer" },
+    "weeklyReset": { "type": "string" }
+  },
+  "required": [
+    "fiveHourRemaining",
+    "fiveHourReset",
+    "weeklyRemaining",
+    "weeklyReset"
+  ]
+}
