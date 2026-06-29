@@ -24,8 +24,9 @@ week_left=$((100 - week_used))
 
 five_reset_local=$(date -r "$five_reset" "+%I:%M %p")
 week_reset_local=$(date -r "$week_reset" "+%I:%M %p")
+week_reset_date=$(date -r "$week_reset" "+%b %d")
 
 printf "5h: %3d%% (%s)   Weekly: %3d%% (%s)   Credits: %s\n" \
     "$five_left" "$five_reset_local" \
-    "$week_left" "$week_reset_local" \
+    "$week_left" "$week_reset_date $week_reset_local" \
     "$credits"
